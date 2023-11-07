@@ -1,9 +1,8 @@
-// Get references to elements
 const clickHere = document.getElementById("clickHere");
 const modal = document.getElementById("modal");
 const downButton = document.getElementById("downButton");
+const cancel = document.getElementById("cancel");
 const icon = document.getElementById("icon");
-// const main = document.getElementsByTagName("main");
 
 clickHere.addEventListener("click", function () {
   modal.style.display = "block";
@@ -13,15 +12,13 @@ downButton.addEventListener("click", function () {
   modal.style.display = "none";
 });
 
-icon.addEventListener("click", function () {
+cancel.addEventListener("click", function () {
   modal.style.display = "none";
 });
 
-// main.addEventListener("click", function (event) {
-//   if (event.target === "main") {
-//     modal.style.display = "block";
-//   }
-// });
+icon.addEventListener("click", function () {
+  modal.style.display = "none";
+});
 
 window.addEventListener("click", function (event) {
   if (event.target === modal) {
