@@ -24,6 +24,16 @@ h1 {
 
 }
 
+#container {
+    width: 100%;
+    height: 800px;
+}
+
+.modalContainer {
+    background-color: grey;
+    width: 100%;
+}
+
 #modal {
     position: fixed;
     margin-top: 3%;
@@ -60,7 +70,8 @@ h3 {
 
 }
 
-#downButton {
+#downButton,
+#cancel {
     background-color: white;
     color: black;
     padding: 5px;
@@ -68,6 +79,8 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
 }
+
+
 
 #clickHere {
     background-color: blue;
